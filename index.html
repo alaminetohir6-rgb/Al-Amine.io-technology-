@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10102a">
+  <title>Al-Amine.io — Internal AI</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div class="crest">AL</div><div><p class="eyebrow">TECHNOLOGY FOR ALL</p><h1>Al-Amine.io</h1><p class="muted">Private operations dashboard</p></div></header>
+    <section id="login" class="panel">
+      <h2>Owner sign in</h2>
+      <form id="loginForm"><label>Username<input name="username" required autocomplete="username"></label><label>Password<input name="password" type="password" required autocomplete="current-password"></label><button>Sign in</button></form>
+      <p id="loginMessage" class="muted" role="status"></p>
+    </section>
+    <section id="dashboard" hidden>
+      <div class="toolbar"><h2>Operations overview</h2><button id="logout" class="secondary">Sign out</button></div>
+      <div class="stats"><article class="panel"><span>Orders by status</span><pre id="summary">Loading…</pre></article><article class="panel"><span>Payments needing review</span><strong id="payments">—</strong></article></div>
+      <section class="panel"><h2>Incoming orders</h2><div id="orders">Loading…</div></section>
+      <section class="panel"><h2>Activity log</h2><div id="activity">Loading…</div></section>
+    </section>
+    <footer>Development starter only · AI and telephone receptionist are not connected.</footer>
+  </main>
+  <script src="/app.js"></script>
+</body></html>
